@@ -1,8 +1,10 @@
 # BugabooStudiosTest
 Repositório para teste proposto pela Bugaboo Studios
 ## Configurações de projeto:
+
 Versão do Unity utilizada: 2022.3.5f1
 Dependências de projeto:
+
 - Probuilder: utilizado para construir o cenário, ótima ferramenta para geometrias complexas
 - InputSystem: utilizado para configurar controles de teclado e gamepad, também usado como método para implementar multijogador local
 - TMPro: utilizado nos textos, dado que nas versões mais novas do Unity, TMPro se tornou padrão
