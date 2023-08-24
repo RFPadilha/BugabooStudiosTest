@@ -3,6 +3,7 @@ Repositório para teste proposto pela Bugaboo Studios
 ## Configurações de projeto:
 
 Versão do Unity utilizada: 2022.3.5f1
+
 Dependências de projeto:
 
 - Probuilder: utilizado para construir o cenário, ótima ferramenta para geometrias complexas
