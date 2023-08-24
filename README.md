@@ -14,6 +14,7 @@ Dependências de projeto:
 Projeto possui somente uma cena que é o jogo em sua completude, "Build and Run" para compilar e executar.
 
 ## Assembly Definitions
-Duas definições foram construidas
+Três definições foram construidas
 - Uma para agrupar os scripts responsáveis pelo sistema de salvar / carregar
 - Uma para agrupar os scripts do jogo base, que regulam movimentação, interface, multijogador, etc...
+- Uma para agrupar os scripts de unit tests, gerada automaticamente pelo unity testrunner
