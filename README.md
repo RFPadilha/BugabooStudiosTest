@@ -11,7 +11,7 @@ Dependências de projeto:
 - TMPro: utilizado nos textos, dado que nas versões mais novas do Unity, TMPro se tornou padrão
 
 ## Compilando e executando:
-Projeto possui somente uma cena que é o jogo em sua completude, "Build and Run" para compilar e executar.
+Projeto possui somente uma cena que é o jogo em sua completude, ao importar os arquivos do repositório em um projeto local e inserir a cena na hierarquia, "Build and Run" irá compilar e executar.
 
 ## Assembly Definitions
 Três definições foram construidas
