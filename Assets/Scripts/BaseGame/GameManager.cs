@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         //adds player 1 on game start with ID = 0
         PlayerInputManager.instance.JoinPlayer(0,-1,null);
+
     }
     void OnPlayerJoined(PlayerInput playerInput)
     {
@@ -43,7 +44,6 @@ public class GameManager : MonoBehaviour
         {
             PlayerJoinedGame(playerInput);
         }
-
         //Debug.Log("Player joined");
 
     }

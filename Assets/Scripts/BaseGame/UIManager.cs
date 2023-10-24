@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour, IDataPersistence
         Time.timeScale = 0f;
         timerOn = false;
         highScoreText.text = ($"High Score: {highscore}");//set highscore to saved score
+
     }
     private void Update()
     {
@@ -137,7 +138,7 @@ public class UIManager : MonoBehaviour, IDataPersistence
         gameEnded = false;
         saved = false;
         int.TryParse(timeLimitText.text, out int setTimer);
-        timeRemaining = setTimer;
+        timeRemaining = 90f;
         Time.timeScale = 1f;
         timerOn = true;
         startMenuPanel.SetActive(false);

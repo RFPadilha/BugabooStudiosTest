@@ -21,4 +21,16 @@ public class PlayerInputHandler : MonoBehaviour
     {
         playerController.OnMove(context);
     }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        playerController.OnJump(context);
+    }
+    public void OnSlap(InputAction.CallbackContext context)
+    {
+        playerController.OnSlap(context);
+    }
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        playerController.OnDash(context);
+    }
 }

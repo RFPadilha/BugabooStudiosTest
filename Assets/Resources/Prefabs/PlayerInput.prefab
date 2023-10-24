@@ -74,6 +74,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: df3f06ca-9f30-4984-bd7e-064ec8d7c916
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7733121474198151723}
+        m_TargetAssemblyTypeName: PlayerInputHandler, BaseGame
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c51c8105-b84f-4976-ad54-3cac9cb4f4de
+    m_ActionName: Player/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7733121474198151723}
+        m_TargetAssemblyTypeName: PlayerInputHandler, BaseGame
+        m_MethodName: OnSlap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1eaa545d-2330-45e6-aaeb-d8f9e4f6f8f5
+    m_ActionName: Player/Slap[/Keyboard/rightShift,/XInputControllerWindows/buttonWest]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7733121474198151723}
+        m_TargetAssemblyTypeName: PlayerInputHandler, BaseGame
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c315b9f7-31fd-478a-9e2f-59c10f040710
+    m_ActionName: Player/Dash[/Keyboard/rightCtrl,/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -93,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefabs:
   - {fileID: 7074784028844277921, guid: 85f66451928cf1d45bff90253c961d86, type: 3}
-  - {fileID: 7074784028844277921, guid: 17b409308cd8bfb4ba90ac848464f8ec, type: 3}
-  - {fileID: 7074784028844277921, guid: 981859fa6913edd4c866091a777f5972, type: 3}
-  - {fileID: 7074784028844277921, guid: 40f3078443b050f4d937757bc975ff2a, type: 3}
+  - {fileID: 7074784028844277921, guid: a7b3544dbb8aae14aa858fb75c9c3cfc, type: 3}
+  - {fileID: 7074784028844277921, guid: 5f6ff6546a1554141ac334f3408cd0f9, type: 3}
+  - {fileID: 7074784028844277921, guid: 9ac309af9e840a64badeb399ff77e2e8, type: 3}
   playerController: {fileID: 0}

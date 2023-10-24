@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     [SerializeField]
     private float gravityValue = -9.81f;
 
+    Animator _animator;
+
     public enum playerName
     {
         Blue, Red, Green, Purple
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         {
             OnScoreChanged(score);
         }
+        _animator = GetComponent<Animator>();
     }
     void Update()
     {
@@ -57,21 +60,50 @@ public class PlayerController : MonoBehaviour, IPlayerController
         }
 
         /*
-        // Changes the height position of the player..
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
+         * This is using the old input system, refactor for the new one
+         * 
+        if (Input.GetButtonDown("Fire1"))//left click, South on gamepad
         {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            //slap opponents
+        }
+        if (Input.GetButtonDown("Fire2"))//Right click, East on gamepad
+        {
+            //dash with cooldown
+        }
+        if (Input.GetButtonDown("Fire3"))//middle click, west on gamepad
+        {
         }
         */
-
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
+        _animator.SetBool("IsGrounded", groundedPlayer);
+        _animator.SetFloat("Speed", move.normalized.magnitude);
+
     }
     public void OnMove(InputAction.CallbackContext context)
     {
         Vector2 movement = context.ReadValue<Vector2>();
         move = new Vector3(movement.x, 0, movement.y);
     }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -gravityValue);
+        }
+    }
+
+
+    public void OnSlap(InputAction.CallbackContext context)
+    {
+        Debug.Log("Slappity slap");
+    }
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        Debug.Log("Dashing...");
+    }
+
     public void IncreaseScore(int value)
     {
         score += value;
@@ -81,4 +113,5 @@ public class PlayerController : MonoBehaviour, IPlayerController
         }
         //Debug.Log($"Player score is {score}");
     }
+    
 }
