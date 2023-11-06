@@ -138,7 +138,7 @@ public class UIManager : MonoBehaviour, IDataPersistence
         gameEnded = false;
         saved = false;
         int.TryParse(timeLimitText.text, out int setTimer);
-        timeRemaining = 90f;
+        timeRemaining = setTimer;
         Time.timeScale = 1f;
         timerOn = true;
         startMenuPanel.SetActive(false);
